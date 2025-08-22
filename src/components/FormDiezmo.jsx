@@ -32,18 +32,22 @@ export const FormDiezmo = () => {
         jovenes: 0,
         otros: 0,
     });
-    const { resultado, handleAdd } = UseCalc(datos);
+    const { obtiendo, valor, resultado, handleAdd, handleCalc, handleResult } =
+        UseCalc(datos);
 
     const handleSubmit = (e) => {
         e.preventDefault();
         handleAdd();
-        console.log(resultado);
+        // console.log(resultado);
+        handleCalc();
+
+        handleResult();
     };
 
     return (
         <>
             <Escala />
-            <form onClick={handleSubmit} className="mt-4 flex flex-col">
+            <form onSubmit={handleSubmit} className="mt-4 flex flex-col">
                 <div className="flex justify-between  p-2">
                     <label className="w-30" htmlFor="Fondo">
                         Fondo Iglesia
@@ -74,7 +78,7 @@ export const FormDiezmo = () => {
                         onChange={handleChange}
                     />
 
-                    <span>{fondo}</span>
+                    <span>{resultado.entradar}</span>
                 </div>
                 <div className="flex justify-between  p-2">
                     <label className="w-30" htmlFor="obra">
@@ -86,8 +90,9 @@ export const FormDiezmo = () => {
                         type="number"
                         placeholder="0"
                         name="obra"
-                        value={obra}
+                        value={valor.obrap}
                         onChange={handleChange}
+                        disabled={true}
                     />
 
                     <span>{fondo}</span>
