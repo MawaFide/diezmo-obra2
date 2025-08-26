@@ -14,6 +14,8 @@ export const UseCalc = (initialValue = {}) => {
         caballerosp: 0,
         jovenesp: 0,
         otrosp: 0,
+        escalar: "",
+        porcientor: "",
     });
     const [resultado, setResultado] = useState({
         fondor: 0,
@@ -27,6 +29,8 @@ export const UseCalc = (initialValue = {}) => {
         caballerosr: 0,
         jovenesr: 0,
         otrosr: 0,
+        escalar: "",
+        porcientor: "",
     });
 
     const handleAdd = () => {
@@ -37,11 +41,130 @@ export const UseCalc = (initialValue = {}) => {
         if (obtiendo.entrada >= 300 && obtiendo.entrada <= 4500) {
             setValor({
                 ...valor,
-                obrap:valor.obrap = (obtiendo.entrada * 10) / 100,
-                   
+                obrap: (valor.obrap = (obtiendo.entrada * 10) / 100),
+                escalap: (valor.escalap = 1),
+                porcientop: (valor.porcientop = "10%"),
+                pastorap: (valor.pastorp = 2100),
+                aportep: (valor.aportep = (obtiendo.pastor * 10) / 100),
             });
-         
-            
+
+            setResultado({
+                ...resultado,
+                fondor: (resultado.fondor = obtiendo.fondo),
+                entradar: (resultado.entradar =
+                    parseInt(obtiendo.fondo) + parseInt(obtiendo.entrada)),
+                obrar: (resultado.obrar =
+                    parseInt(resultado.entradar) - parseInt(valor.obrap)),
+            });
+        }
+        if (obtiendo.entrada >= 4501 && obtiendo.entrada <= 6000) {
+            setValor({
+                ...valor,
+                obrap: (valor.obrap = (obtiendo.entrada * 11) / 100),
+                escalap: (valor.escalap = 2),
+                porcientop: (valor.porcientop = "11%"),
+                pastorap: (valor.pastorp = 3000),
+                aportep: (valor.aportep = (obtiendo.pastor * 10) / 100),
+            });
+        }
+        if (obtiendo.entrada >= 6001 && obtiendo.entrada <= 8000) {
+            setValor({
+                ...valor,
+                obrap: (valor.obrap = (obtiendo.entrada * 12) / 100),
+                escalap: (valor.escalap = 3),
+                porcientop: (valor.porcientop = "12%"),
+                pastorap: (valor.pastorap = 2100),
+                pastorap: (valor.pastorp = 2100),
+                aportep: (valor.aportep = (obtiendo.pastor * 10) / 100),
+            });
+        }
+        if (obtiendo.entrada >= 8001 && obtiendo.entrada <= 10000) {
+            setValor({
+                ...valor,
+                obrap: (valor.obrap = (obtiendo.entrada * 13) / 100),
+                escalap: (valor.escalap = 4),
+                porcientop: (valor.porcientop = "13%"),
+                pastorap: (valor.pastorap = 2500),
+                pastorap: (valor.pastorp = 2500),
+                aportep: (valor.aportep = (obtiendo.pastor * 10) / 100),
+            });
+        }
+        if (obtiendo.entrada >= 10001 && obtiendo.entrada <= 15000) {
+            setValor({
+                ...valor,
+                obrap: (valor.obrap = (obtiendo.entrada * 14) / 100),
+                escalap: (valor.escalap = 5),
+                porcientop: (valor.porcientop = "14%"),
+                pastorap: (valor.pastorap = 3000),
+                pastorap: (valor.pastorp = 3000),
+                aportep: (valor.aportep = (obtiendo.pastor * 10) / 100),
+            });
+        }
+        if (obtiendo.entrada >= 15001 && obtiendo.entrada <= 20000) {
+            setValor({
+                ...valor,
+                obrap: (valor.obrap = (obtiendo.entrada * 15) / 100),
+                escalap: (valor.escalap = 6),
+                porcientop: (valor.porcientop = "15%"),
+                pastorap: (valor.pastorap = 4500),
+                pastorap: (valor.pastorp = 4500),
+                aportep: (valor.aportep = (obtiendo.pastor * 10) / 100),
+            });
+        }
+        if (obtiendo.entrada >= 20001 && obtiendo.entrada <= 30000) {
+            setValor({
+                ...valor,
+                obrap: (valor.obrap = (obtiendo.entrada * 16) / 100),
+                escalap: (valor.escalap = 7),
+                porcientop: (valor.porcientop = "16%"),
+                pastorap: (valor.pastorap = 5500),
+                pastorap: (valor.pastorp = 5500),
+                aportep: (valor.aportep = (obtiendo.pastor * 10) / 100),
+            });
+        }
+        if (obtiendo.entrada >= 30001 && obtiendo.entrada <= 40000) {
+            setValor({
+                ...valor,
+                obrap: (valor.obrap = (obtiendo.entrada * 17) / 100),
+                escalap: (valor.escalap = 8),
+                porcientop: (valor.porcientop = "17%"),
+                pastorap: (valor.pastorap = 6500),
+                pastorap: (valor.pastorp = 6500),
+                aportep: (valor.aportep = (obtiendo.pastor * 10) / 100),
+            });
+        }
+        if (obtiendo.entrada >= 40001 && obtiendo.entrada <= 60000) {
+            setValor({
+                ...valor,
+                obrap: (valor.obrap = (obtiendo.entrada * 18) / 100),
+                escalap: (valor.escalap = 9),
+                porcientop: (valor.porcientop = "18%"),
+                pastorap: (valor.pastorap = 8000),
+                pastorap: (valor.pastorp = 8000),
+                aportep: (valor.aportep = (obtiendo.pastor * 10) / 100),
+            });
+        }
+        if (obtiendo.entrada >= 60001 && obtiendo.entrada <= 100000) {
+            setValor({
+                ...valor,
+                obrap: (valor.obrap = (obtiendo.entrada * 19) / 100),
+                escalap: (valor.escalap = 10),
+                porcientop: (valor.porcientop = "19%"),
+                pastorap: (valor.pastorap = 10000),
+                pastorap: (valor.pastorp = 10000),
+                aportep: (valor.aportep = (obtiendo.pastor * 10) / 100),
+            });
+        }
+        if (obtiendo.entrada >= 100001) {
+            setValor({
+                ...valor,
+                obrap: (valor.obrap = (obtiendo.entrada * 20) / 100),
+                escalap: (valor.escalap = 11),
+                porcientop: (valor.porcientop = "20%"),
+                pastorap: (valor.pastorap = 12000),
+                pastorap: (valor.pastorp = 12000),
+                aportep: (valor.aportep = (obtiendo.pastor * 10) / 100),
+            });
         }
         // setValor({
         //     fondop: obtiendo.fondo,
@@ -58,21 +181,21 @@ export const UseCalc = (initialValue = {}) => {
         // });
     };
 
-    const handleResult = () => {
-        setResultado({
-            fondor: obtiendo.fondo,
-            entradar: parseInt(obtiendo.entrada) + parseInt(obtiendo.fondo),
-            obrar: parseInt(),
-            pastorr: 0,
-            pastorar: 0,
-            aporter: 0,
-            ayudar: 0,
-            misionesr: 0,
-            caballerosr: 0,
-            jovenesr: 0,
-            otrosr: 0,
-        });
-    };
+    // const handleResult = () => {
+    //     setResultado({
+    //         fondor: obtiendo.fondo,
+    //         entradar: parseInt(obtiendo.entrada) + parseInt(obtiendo.fondo),
+    //         obrar: parseInt(),
+    //         pastorr: 0,
+    //         pastorar: 0,
+    //         aporter: 0,
+    //         ayudar: 0,
+    //         misionesr: 0,
+    //         caballerosr: 0,
+    //         jovenesr: 0,
+    //         otrosr: 0,
+    //     });
+    // };
 
     return {
         obtiendo,
@@ -80,6 +203,5 @@ export const UseCalc = (initialValue = {}) => {
         resultado,
         handleAdd,
         handleCalc,
-        handleResult,
     };
 };

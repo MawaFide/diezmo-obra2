@@ -95,7 +95,7 @@ export const FormDiezmo = () => {
                         disabled={true}
                     />
 
-                    <span>{fondo}</span>
+                    <span>{resultado.obrar}</span>
                 </div>
                 <div className="flex justify-between  p-2">
                     <label className="w-30" htmlFor="pastor">
