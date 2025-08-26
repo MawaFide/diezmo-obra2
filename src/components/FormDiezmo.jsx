@@ -50,7 +50,7 @@ export const FormDiezmo = () => {
         // handelResetValo();
         handleCalc();
 
-        handleResult();
+        
     };
 
     return (
@@ -151,11 +151,11 @@ export const FormDiezmo = () => {
                         type="number"
                         placeholder="0"
                         name="aporteI"
-                        value={aporteI}
+                        value={valor.aportep}
                         onChange={handleChange}
                     />
 
-                    <span>{fondo}</span>
+                    <span>{resultado.aporter}</span>
                 </div>
                 <div className="flex justify-between  p-2">
                     <label className="w-30" htmlFor="ayudaI">
@@ -171,7 +171,7 @@ export const FormDiezmo = () => {
                         onChange={handleChange}
                     />
 
-                    <span>{fondo}</span>
+                    <span>{resultado.ayudar}</span>
                 </div>
                 <div className="flex justify-between  p-2">
                     <label className="w-30" htmlFor="misiones">
@@ -187,7 +187,7 @@ export const FormDiezmo = () => {
                         onChange={handleChange}
                     />
 
-                    <span>{fondo}</span>
+                    <span>{resultado.misionesr}</span>
                 </div>
                 <div className="flex justify-between  p-2">
                     <label className="w-30" htmlFor="caballeros">
@@ -203,7 +203,7 @@ export const FormDiezmo = () => {
                         onChange={handleChange}
                     />
 
-                    <span>{fondo}</span>
+                    <span>{resultado.caballerosr}</span>
                 </div>
                 <div className="flex justify-between  p-2">
                     <label className="w-30" htmlFor="jovenes">
@@ -219,7 +219,7 @@ export const FormDiezmo = () => {
                         onChange={handleChange}
                     />
 
-                    <span>{fondo}</span>
+                    <span>{resultado.jovenesr}</span>
                 </div>
                 <div className="flex justify-between  p-2">
                     <label className="w-30" htmlFor="otros">
@@ -235,7 +235,7 @@ export const FormDiezmo = () => {
                         onChange={handleChange}
                     />
 
-                    <span>{fondo}</span>
+                    <span>{resultado.otrosr}</span>
                 </div>
 
                 {/* final */}
