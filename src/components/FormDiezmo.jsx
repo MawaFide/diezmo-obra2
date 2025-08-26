@@ -32,13 +32,22 @@ export const FormDiezmo = () => {
         jovenes: 0,
         otros: 0,
     });
-    const { obtiendo, valor, resultado, handleAdd, handleCalc, handleResult } =
-        UseCalc(datos);
+    const {
+        obtiendo,
+        valor,
+        resultado,
+        handleAdd,
+        handleCalc,
+        handleResult,
+        handelResetValo,
+    } = UseCalc(datos);
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        
         handleAdd();
         // console.log(resultado);
+        // handelResetValo();
         handleCalc();
 
         handleResult();
@@ -46,7 +55,7 @@ export const FormDiezmo = () => {
 
     return (
         <>
-            <Escala />
+            <Escala escala={valor.escalap} porciento={valor.porcientop} />
             <form onSubmit={handleSubmit} className="mt-4 flex flex-col">
                 <div className="flex justify-between  p-2">
                     <label className="w-30" htmlFor="Fondo">
@@ -107,11 +116,12 @@ export const FormDiezmo = () => {
                         type="number"
                         placeholder="0"
                         name="pastor"
-                        value={pastor}
+                        value={valor.pastorp}
                         onChange={handleChange}
+                        disabled={true}
                     />
 
-                    <span>{fondo}</span>
+                    <span>{resultado.pastorr}</span>
                 </div>
                 <div className="flex justify-between  p-2">
                     <label className="w-30" htmlFor="pastora">
@@ -123,11 +133,12 @@ export const FormDiezmo = () => {
                         type="number"
                         placeholder="0"
                         name="pastora"
-                        value={pastora}
+                        value={valor.pastorap}
                         onChange={handleChange}
+                        disabled={true}
                     />
 
-                    <span>{fondo}</span>
+                    <span>{resultado.pastorar}</span>
                 </div>
 
                 <div className="flex justify-between  p-2">

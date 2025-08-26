@@ -1,22 +1,23 @@
 import { useState } from "react";
+const valorInitial = {
+    fondop: 0,
+    entradap: 0,
+    obrap: 0,
+    pastorp: 0,
+    pastorap: 0,
+    aportep: 0,
+    ayudap: 0,
+    misionesp: 0,
+    caballerosp: 0,
+    jovenesp: 0,
+    otrosp: 0,
+    escalap: "",
+    porcientop: "",
+};
 
 export const UseCalc = (initialValue = {}) => {
     const [obtiendo, setObtiendo] = useState(initialValue);
-    const [valor, setValor] = useState({
-        fondop: 0,
-        entradap: 0,
-        obrap: 0,
-        pastorp: 0,
-        pastorap: 0,
-        aportep: 0,
-        ayudap: 0,
-        misionesp: 0,
-        caballerosp: 0,
-        jovenesp: 0,
-        otrosp: 0,
-        escalar: "",
-        porcientor: "",
-    });
+    const [valor, setValor] = useState(valorInitial);
     const [resultado, setResultado] = useState({
         fondor: 0,
         entradar: 0,
@@ -36,15 +37,20 @@ export const UseCalc = (initialValue = {}) => {
     const handleAdd = () => {
         setObtiendo(initialValue);
     };
+    const handelResetValo = () => {
+        setValor(valorInitial);
+    };
 
     const handleCalc = () => {
+        // escala1
         if (obtiendo.entrada >= 300 && obtiendo.entrada <= 4500) {
             setValor({
                 ...valor,
                 obrap: (valor.obrap = (obtiendo.entrada * 10) / 100),
                 escalap: (valor.escalap = 1),
                 porcientop: (valor.porcientop = "10%"),
-                pastorap: (valor.pastorp = 2100),
+                pastorp: (valor.pastorp = 2100),
+                pastorap: (valor.pastorp = 0),
                 aportep: (valor.aportep = (obtiendo.pastor * 10) / 100),
             });
 
@@ -55,16 +61,28 @@ export const UseCalc = (initialValue = {}) => {
                     parseInt(obtiendo.fondo) + parseInt(obtiendo.entrada)),
                 obrar: (resultado.obrar =
                     parseInt(resultado.entradar) - parseInt(valor.obrap)),
+                    pastorr: resultado.pastorr= parseInt(resultado.obrar) - parseInt(valor.pastorp),
+                    pastorar: resultado.pastorar= parseInt(resultado.pastorr) - parseInt(valor.pastorap),
             });
         }
+        // escala2
         if (obtiendo.entrada >= 4501 && obtiendo.entrada <= 6000) {
             setValor({
                 ...valor,
                 obrap: (valor.obrap = (obtiendo.entrada * 11) / 100),
                 escalap: (valor.escalap = 2),
                 porcientop: (valor.porcientop = "11%"),
-                pastorap: (valor.pastorp = 3000),
+                pastorp: (valor.pastorp = 3000),
+                pastorap: (valor.pastorp = 0),
                 aportep: (valor.aportep = (obtiendo.pastor * 10) / 100),
+            });
+            setResultado({
+                ...resultado,
+                fondor: (resultado.fondor = obtiendo.fondo),
+                entradar: (resultado.entradar =
+                    parseInt(obtiendo.fondo) + parseInt(obtiendo.entrada)),
+                obrar: (resultado.obrar =
+                    parseInt(resultado.entradar) - parseInt(valor.obrap)),
             });
         }
         if (obtiendo.entrada >= 6001 && obtiendo.entrada <= 8000) {
@@ -74,7 +92,7 @@ export const UseCalc = (initialValue = {}) => {
                 escalap: (valor.escalap = 3),
                 porcientop: (valor.porcientop = "12%"),
                 pastorap: (valor.pastorap = 2100),
-                pastorap: (valor.pastorp = 2100),
+                pastorp: (valor.pastorp = 2100),
                 aportep: (valor.aportep = (obtiendo.pastor * 10) / 100),
             });
         }
@@ -96,7 +114,7 @@ export const UseCalc = (initialValue = {}) => {
                 escalap: (valor.escalap = 5),
                 porcientop: (valor.porcientop = "14%"),
                 pastorap: (valor.pastorap = 3000),
-                pastorap: (valor.pastorp = 3000),
+                pastorp: (valor.pastorp = 3000),
                 aportep: (valor.aportep = (obtiendo.pastor * 10) / 100),
             });
         }
@@ -107,7 +125,7 @@ export const UseCalc = (initialValue = {}) => {
                 escalap: (valor.escalap = 6),
                 porcientop: (valor.porcientop = "15%"),
                 pastorap: (valor.pastorap = 4500),
-                pastorap: (valor.pastorp = 4500),
+                pastorp: (valor.pastorp = 4500),
                 aportep: (valor.aportep = (obtiendo.pastor * 10) / 100),
             });
         }
@@ -203,5 +221,6 @@ export const UseCalc = (initialValue = {}) => {
         resultado,
         handleAdd,
         handleCalc,
+        handelResetValo,
     };
 };
