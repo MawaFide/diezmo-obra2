@@ -153,6 +153,7 @@ export const FormDiezmo = () => {
                         name="aporteI"
                         value={valor.aportep}
                         onChange={handleChange}
+                        disabled={true}
                     />
 
                     <span>{resultado.aporter}</span>
