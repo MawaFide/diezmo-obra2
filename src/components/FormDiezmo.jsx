@@ -40,6 +40,7 @@ export const FormDiezmo = () => {
         handleCalc,
         handleResult,
         handelResetValo,
+        sumaObreroIglesia,
     } = UseCalc(datos);
 
     const handleSubmit = (e) => {
@@ -55,7 +56,7 @@ export const FormDiezmo = () => {
 
     return (
         <>
-            <Escala escala={valor.escalap} porciento={valor.porcientop} />
+            <Escala escala={valor.escalap}  porciento={valor.porcientop} suma={sumaObreroIglesia}  />
             <form onSubmit={handleSubmit} className="mt-4 flex flex-col">
                 <div className="flex justify-between  p-2">
                     <label className="w-30" htmlFor="Fondo">
@@ -247,7 +248,7 @@ export const FormDiezmo = () => {
                     Calcular
                 </button>
             </form>
-            <SalarioNomina />
+            <SalarioNomina {...valor} />
         </>
     );
 };

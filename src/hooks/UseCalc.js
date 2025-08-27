@@ -86,11 +86,10 @@ export const UseCalc = (initialValue = {}) => {
                 otrosr: (resultado.otrosr =
                     parseInt(resultado.jovenesr) - parseInt(valor.otrosp)),
             });
-           
         }
         // escala2
         if (obtiendo.entrada >= 4501 && obtiendo.entrada <= 6000) {
-             setValor({
+            setValor({
                 ...valor,
                 obrap: (valor.obrap = (obtiendo.entrada * 11) / 100),
                 escalap: (valor.escalap = 2),
@@ -106,7 +105,7 @@ export const UseCalc = (initialValue = {}) => {
                 jovenesp: (valor.jovenesp = parseInt(obtiendo.jovenes)),
                 otrosp: (valor.otrosp = parseInt(obtiendo.otros)),
             });
-             setResultado({
+            setResultado({
                 ...resultado,
                 fondor: (resultado.fondor = obtiendo.fondo),
                 entradar: (resultado.entradar =
@@ -150,7 +149,7 @@ export const UseCalc = (initialValue = {}) => {
                 jovenesp: (valor.jovenesp = parseInt(obtiendo.jovenes)),
                 otrosp: (valor.otrosp = parseInt(obtiendo.otros)),
             });
-             setResultado({
+            setResultado({
                 ...resultado,
                 fondor: (resultado.fondor = obtiendo.fondo),
                 entradar: (resultado.entradar =
@@ -178,7 +177,7 @@ export const UseCalc = (initialValue = {}) => {
         }
         // escala4
         if (obtiendo.entrada >= 8001 && obtiendo.entrada <= 10000) {
-             setValor({
+            setValor({
                 ...valor,
                 obrap: (valor.obrap = (obtiendo.entrada * 13) / 100),
                 escalap: (valor.escalap = 4),
@@ -194,7 +193,7 @@ export const UseCalc = (initialValue = {}) => {
                 jovenesp: (valor.jovenesp = parseInt(obtiendo.jovenes)),
                 otrosp: (valor.otrosp = parseInt(obtiendo.otros)),
             });
-             setResultado({
+            setResultado({
                 ...resultado,
                 fondor: (resultado.fondor = obtiendo.fondo),
                 entradar: (resultado.entradar =
@@ -222,7 +221,7 @@ export const UseCalc = (initialValue = {}) => {
         }
         // escala5
         if (obtiendo.entrada >= 10001 && obtiendo.entrada <= 15000) {
-           setValor({
+            setValor({
                 ...valor,
                 obrap: (valor.obrap = (obtiendo.entrada * 14) / 100),
                 escalap: (valor.escalap = 5),
@@ -238,7 +237,7 @@ export const UseCalc = (initialValue = {}) => {
                 jovenesp: (valor.jovenesp = parseInt(obtiendo.jovenes)),
                 otrosp: (valor.otrosp = parseInt(obtiendo.otros)),
             });
-             setResultado({
+            setResultado({
                 ...resultado,
                 fondor: (resultado.fondor = obtiendo.fondo),
                 entradar: (resultado.entradar =
@@ -266,7 +265,7 @@ export const UseCalc = (initialValue = {}) => {
         }
         // escala6
         if (obtiendo.entrada >= 15001 && obtiendo.entrada <= 20000) {
-             setValor({
+            setValor({
                 ...valor,
                 obrap: (valor.obrap = (obtiendo.entrada * 15) / 100),
                 escalap: (valor.escalap = 6),
@@ -282,7 +281,7 @@ export const UseCalc = (initialValue = {}) => {
                 jovenesp: (valor.jovenesp = parseInt(obtiendo.jovenes)),
                 otrosp: (valor.otrosp = parseInt(obtiendo.otros)),
             });
-             setResultado({
+            setResultado({
                 ...resultado,
                 fondor: (resultado.fondor = obtiendo.fondo),
                 entradar: (resultado.entradar =
@@ -310,7 +309,7 @@ export const UseCalc = (initialValue = {}) => {
         }
         // escala7
         if (obtiendo.entrada >= 20001 && obtiendo.entrada <= 30000) {
-             setValor({
+            setValor({
                 ...valor,
                 obrap: (valor.obrap = (obtiendo.entrada * 16) / 100),
                 escalap: (valor.escalap = 7),
@@ -326,7 +325,7 @@ export const UseCalc = (initialValue = {}) => {
                 jovenesp: (valor.jovenesp = parseInt(obtiendo.jovenes)),
                 otrosp: (valor.otrosp = parseInt(obtiendo.otros)),
             });
-             setResultado({
+            setResultado({
                 ...resultado,
                 fondor: (resultado.fondor = obtiendo.fondo),
                 entradar: (resultado.entradar =
@@ -354,7 +353,7 @@ export const UseCalc = (initialValue = {}) => {
         }
         // escala8
         if (obtiendo.entrada >= 30001 && obtiendo.entrada <= 40000) {
-           setValor({
+            setValor({
                 ...valor,
                 obrap: (valor.obrap = (obtiendo.entrada * 17) / 100),
                 escalap: (valor.escalap = 8),
@@ -370,7 +369,7 @@ export const UseCalc = (initialValue = {}) => {
                 jovenesp: (valor.jovenesp = parseInt(obtiendo.jovenes)),
                 otrosp: (valor.otrosp = parseInt(obtiendo.otros)),
             });
-             setResultado({
+            setResultado({
                 ...resultado,
                 fondor: (resultado.fondor = obtiendo.fondo),
                 entradar: (resultado.entradar =
@@ -398,7 +397,7 @@ export const UseCalc = (initialValue = {}) => {
         }
         // escala9
         if (obtiendo.entrada >= 40001 && obtiendo.entrada <= 60000) {
-             setValor({
+            setValor({
                 ...valor,
                 obrap: (valor.obrap = (obtiendo.entrada * 18) / 100),
                 escalap: (valor.escalap = 9),
@@ -414,7 +413,7 @@ export const UseCalc = (initialValue = {}) => {
                 jovenesp: (valor.jovenesp = parseInt(obtiendo.jovenes)),
                 otrosp: (valor.otrosp = parseInt(obtiendo.otros)),
             });
-             setResultado({
+            setResultado({
                 ...resultado,
                 fondor: (resultado.fondor = obtiendo.fondo),
                 entradar: (resultado.entradar =
@@ -442,7 +441,7 @@ export const UseCalc = (initialValue = {}) => {
         }
         // escala10
         if (obtiendo.entrada >= 60001 && obtiendo.entrada <= 100000) {
-             setValor({
+            setValor({
                 ...valor,
                 obrap: (valor.obrap = (obtiendo.entrada * 19) / 100),
                 escalap: (valor.escalap = 10),
@@ -458,7 +457,7 @@ export const UseCalc = (initialValue = {}) => {
                 jovenesp: (valor.jovenesp = parseInt(obtiendo.jovenes)),
                 otrosp: (valor.otrosp = parseInt(obtiendo.otros)),
             });
-             setResultado({
+            setResultado({
                 ...resultado,
                 fondor: (resultado.fondor = obtiendo.fondo),
                 entradar: (resultado.entradar =
@@ -486,7 +485,7 @@ export const UseCalc = (initialValue = {}) => {
         }
         // escala11
         if (obtiendo.entrada >= 100001) {
-             setValor({
+            setValor({
                 ...valor,
                 obrap: (valor.obrap = (obtiendo.entrada * 20) / 100),
                 escalap: (valor.escalap = 11),
@@ -502,7 +501,7 @@ export const UseCalc = (initialValue = {}) => {
                 jovenesp: (valor.jovenesp = parseInt(obtiendo.jovenes)),
                 otrosp: (valor.otrosp = parseInt(obtiendo.otros)),
             });
-             setResultado({
+            setResultado({
                 ...resultado,
                 fondor: (resultado.fondor = obtiendo.fondo),
                 entradar: (resultado.entradar =
@@ -528,36 +527,12 @@ export const UseCalc = (initialValue = {}) => {
                     parseInt(resultado.jovenesr) - parseInt(valor.otrosp)),
             });
         }
-        // setValor({
-        //     fondop: obtiendo.fondo,
-        //     entradap: obtiendo.entrada,
-        //     obrap: obrap,
-        //     pastorp: 0,
-        //     pastorap: 0,
-        //     aportep: 0,
-        //     ayudap: 0,
-        //     misionesp: 0,
-        //     caballerosp: 0,
-        //     jovenesp: 0,
-        //     otrosp: 0,
-        // });
     };
 
-    // const handleResult = () => {
-    //     setResultado({
-    //         fondor: obtiendo.fondo,
-    //         entradar: parseInt(obtiendo.entrada) + parseInt(obtiendo.fondo),
-    //         obrar: parseInt(),
-    //         pastorr: 0,
-    //         pastorar: 0,
-    //         aporter: 0,
-    //         ayudar: 0,
-    //         misionesr: 0,
-    //         caballerosr: 0,
-    //         jovenesr: 0,
-    //         otrosr: 0,
-    //     });
-    // };
+    
+        const sumaObreroIglesia =valor.aportep + (valor.pastorp * 5) /100;
+        
+
 
     return {
         obtiendo,
@@ -566,5 +541,7 @@ export const UseCalc = (initialValue = {}) => {
         handleAdd,
         handleCalc,
         handelResetValo,
+        sumaObreroIglesia,
+        
     };
 };

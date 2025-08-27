@@ -1,6 +1,6 @@
 import React from "react";
 
-export const SalarioNomina = () => {
+export const SalarioNomina = ({pastorp, pastorap,aportep,iglesiap,}) => {
     return (
         <div className="py-4">
             <h2 className="text-center text-violet-700">Salario De Nomina</h2>
@@ -9,7 +9,7 @@ export const SalarioNomina = () => {
                 Nombre
             </div>
             <div className=" border border-r-0 border-y-violet-500 border-l-violet-500">
-                Salario
+                Salario de vengado
             </div>
             <div className=" border border-r-0 border-y-violet-500 border-l-violet-500">
                 Aporte Obrero
@@ -21,15 +21,15 @@ export const SalarioNomina = () => {
                 Salario Neto
             </div>
             <div className="">Pastor</div>
-            <div className="text-end">7</div>
-            <div className="text-end">8</div>
-            <div className="text-end">9</div>
-            <div className="text-end">10</div>
+            <div className="text-end">{pastorp}</div>
+            <div className="text-end">{(pastorap*5) / 100}</div>
+            <div className="text-end">{aportep}</div>
+            <div className="text-end">{pastorap-(pastorap*5) / 100}</div>
              <div className="">Pastora</div>
-            <div className="text-end">7</div>
-            <div className="text-end">8</div>
-            <div className="text-end">9</div>
-            <div className="text-end">10</div>
+            <div className="text-end">{pastorap}</div>
+            <div className="text-end">{(pastorap*5) / 100}</div>
+            <div className="text-end">{aportep}</div>
+            <div className="text-end">{pastorap-(pastorap*5) / 100}</div>
         </div>
         </div>
         
