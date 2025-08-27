@@ -106,13 +106,30 @@ export const UseCalc = (initialValue = {}) => {
                 jovenesp: (valor.jovenesp = parseInt(obtiendo.jovenes)),
                 otrosp: (valor.otrosp = parseInt(obtiendo.otros)),
             });
-            setResultado({
+             setResultado({
                 ...resultado,
                 fondor: (resultado.fondor = obtiendo.fondo),
                 entradar: (resultado.entradar =
                     parseInt(obtiendo.fondo) + parseInt(obtiendo.entrada)),
                 obrar: (resultado.obrar =
                     parseInt(resultado.entradar) - parseInt(valor.obrap)),
+                pastorr: (resultado.pastorr = resultado.obrar - valor.pastorp),
+
+                pastorar: (resultado.pastorar =
+                    parseInt(resultado.pastorr) - parseInt(valor.pastorap)),
+                aporter: (resultado.aporter =
+                    parseInt(resultado.pastorar) - parseInt(valor.aportep)),
+                ayudar: (resultado.ayudar =
+                    parseInt(resultado.aporter) - parseInt(valor.ayudap)),
+                misionesr: (resultado.misionesr =
+                    parseInt(resultado.ayudar) - parseInt(valor.misionesp)),
+                caballerosr: (resultado.caballerosr =
+                    parseInt(resultado.misionesr) -
+                    parseInt(valor.caballerosp)),
+                jovenesr: (resultado.jovenesr =
+                    parseInt(resultado.caballerosr) - parseInt(valor.jovenesp)),
+                otrosr: (resultado.otrosr =
+                    parseInt(resultado.jovenesr) - parseInt(valor.otrosp)),
             });
         }
         // escala3
@@ -133,6 +150,31 @@ export const UseCalc = (initialValue = {}) => {
                 jovenesp: (valor.jovenesp = parseInt(obtiendo.jovenes)),
                 otrosp: (valor.otrosp = parseInt(obtiendo.otros)),
             });
+             setResultado({
+                ...resultado,
+                fondor: (resultado.fondor = obtiendo.fondo),
+                entradar: (resultado.entradar =
+                    parseInt(obtiendo.fondo) + parseInt(obtiendo.entrada)),
+                obrar: (resultado.obrar =
+                    parseInt(resultado.entradar) - parseInt(valor.obrap)),
+                pastorr: (resultado.pastorr = resultado.obrar - valor.pastorp),
+
+                pastorar: (resultado.pastorar =
+                    parseInt(resultado.pastorr) - parseInt(valor.pastorap)),
+                aporter: (resultado.aporter =
+                    parseInt(resultado.pastorar) - parseInt(valor.aportep)),
+                ayudar: (resultado.ayudar =
+                    parseInt(resultado.aporter) - parseInt(valor.ayudap)),
+                misionesr: (resultado.misionesr =
+                    parseInt(resultado.ayudar) - parseInt(valor.misionesp)),
+                caballerosr: (resultado.caballerosr =
+                    parseInt(resultado.misionesr) -
+                    parseInt(valor.caballerosp)),
+                jovenesr: (resultado.jovenesr =
+                    parseInt(resultado.caballerosr) - parseInt(valor.jovenesp)),
+                otrosr: (resultado.otrosr =
+                    parseInt(resultado.jovenesr) - parseInt(valor.otrosp)),
+            });
         }
         // escala4
         if (obtiendo.entrada >= 8001 && obtiendo.entrada <= 10000) {
@@ -151,6 +193,31 @@ export const UseCalc = (initialValue = {}) => {
                 )),
                 jovenesp: (valor.jovenesp = parseInt(obtiendo.jovenes)),
                 otrosp: (valor.otrosp = parseInt(obtiendo.otros)),
+            });
+             setResultado({
+                ...resultado,
+                fondor: (resultado.fondor = obtiendo.fondo),
+                entradar: (resultado.entradar =
+                    parseInt(obtiendo.fondo) + parseInt(obtiendo.entrada)),
+                obrar: (resultado.obrar =
+                    parseInt(resultado.entradar) - parseInt(valor.obrap)),
+                pastorr: (resultado.pastorr = resultado.obrar - valor.pastorp),
+
+                pastorar: (resultado.pastorar =
+                    parseInt(resultado.pastorr) - parseInt(valor.pastorap)),
+                aporter: (resultado.aporter =
+                    parseInt(resultado.pastorar) - parseInt(valor.aportep)),
+                ayudar: (resultado.ayudar =
+                    parseInt(resultado.aporter) - parseInt(valor.ayudap)),
+                misionesr: (resultado.misionesr =
+                    parseInt(resultado.ayudar) - parseInt(valor.misionesp)),
+                caballerosr: (resultado.caballerosr =
+                    parseInt(resultado.misionesr) -
+                    parseInt(valor.caballerosp)),
+                jovenesr: (resultado.jovenesr =
+                    parseInt(resultado.caballerosr) - parseInt(valor.jovenesp)),
+                otrosr: (resultado.otrosr =
+                    parseInt(resultado.jovenesr) - parseInt(valor.otrosp)),
             });
         }
         // escala5
@@ -171,6 +238,31 @@ export const UseCalc = (initialValue = {}) => {
                 jovenesp: (valor.jovenesp = parseInt(obtiendo.jovenes)),
                 otrosp: (valor.otrosp = parseInt(obtiendo.otros)),
             });
+             setResultado({
+                ...resultado,
+                fondor: (resultado.fondor = obtiendo.fondo),
+                entradar: (resultado.entradar =
+                    parseInt(obtiendo.fondo) + parseInt(obtiendo.entrada)),
+                obrar: (resultado.obrar =
+                    parseInt(resultado.entradar) - parseInt(valor.obrap)),
+                pastorr: (resultado.pastorr = resultado.obrar - valor.pastorp),
+
+                pastorar: (resultado.pastorar =
+                    parseInt(resultado.pastorr) - parseInt(valor.pastorap)),
+                aporter: (resultado.aporter =
+                    parseInt(resultado.pastorar) - parseInt(valor.aportep)),
+                ayudar: (resultado.ayudar =
+                    parseInt(resultado.aporter) - parseInt(valor.ayudap)),
+                misionesr: (resultado.misionesr =
+                    parseInt(resultado.ayudar) - parseInt(valor.misionesp)),
+                caballerosr: (resultado.caballerosr =
+                    parseInt(resultado.misionesr) -
+                    parseInt(valor.caballerosp)),
+                jovenesr: (resultado.jovenesr =
+                    parseInt(resultado.caballerosr) - parseInt(valor.jovenesp)),
+                otrosr: (resultado.otrosr =
+                    parseInt(resultado.jovenesr) - parseInt(valor.otrosp)),
+            });
         }
         // escala6
         if (obtiendo.entrada >= 15001 && obtiendo.entrada <= 20000) {
@@ -189,6 +281,31 @@ export const UseCalc = (initialValue = {}) => {
                 )),
                 jovenesp: (valor.jovenesp = parseInt(obtiendo.jovenes)),
                 otrosp: (valor.otrosp = parseInt(obtiendo.otros)),
+            });
+             setResultado({
+                ...resultado,
+                fondor: (resultado.fondor = obtiendo.fondo),
+                entradar: (resultado.entradar =
+                    parseInt(obtiendo.fondo) + parseInt(obtiendo.entrada)),
+                obrar: (resultado.obrar =
+                    parseInt(resultado.entradar) - parseInt(valor.obrap)),
+                pastorr: (resultado.pastorr = resultado.obrar - valor.pastorp),
+
+                pastorar: (resultado.pastorar =
+                    parseInt(resultado.pastorr) - parseInt(valor.pastorap)),
+                aporter: (resultado.aporter =
+                    parseInt(resultado.pastorar) - parseInt(valor.aportep)),
+                ayudar: (resultado.ayudar =
+                    parseInt(resultado.aporter) - parseInt(valor.ayudap)),
+                misionesr: (resultado.misionesr =
+                    parseInt(resultado.ayudar) - parseInt(valor.misionesp)),
+                caballerosr: (resultado.caballerosr =
+                    parseInt(resultado.misionesr) -
+                    parseInt(valor.caballerosp)),
+                jovenesr: (resultado.jovenesr =
+                    parseInt(resultado.caballerosr) - parseInt(valor.jovenesp)),
+                otrosr: (resultado.otrosr =
+                    parseInt(resultado.jovenesr) - parseInt(valor.otrosp)),
             });
         }
         // escala7
@@ -209,6 +326,31 @@ export const UseCalc = (initialValue = {}) => {
                 jovenesp: (valor.jovenesp = parseInt(obtiendo.jovenes)),
                 otrosp: (valor.otrosp = parseInt(obtiendo.otros)),
             });
+             setResultado({
+                ...resultado,
+                fondor: (resultado.fondor = obtiendo.fondo),
+                entradar: (resultado.entradar =
+                    parseInt(obtiendo.fondo) + parseInt(obtiendo.entrada)),
+                obrar: (resultado.obrar =
+                    parseInt(resultado.entradar) - parseInt(valor.obrap)),
+                pastorr: (resultado.pastorr = resultado.obrar - valor.pastorp),
+
+                pastorar: (resultado.pastorar =
+                    parseInt(resultado.pastorr) - parseInt(valor.pastorap)),
+                aporter: (resultado.aporter =
+                    parseInt(resultado.pastorar) - parseInt(valor.aportep)),
+                ayudar: (resultado.ayudar =
+                    parseInt(resultado.aporter) - parseInt(valor.ayudap)),
+                misionesr: (resultado.misionesr =
+                    parseInt(resultado.ayudar) - parseInt(valor.misionesp)),
+                caballerosr: (resultado.caballerosr =
+                    parseInt(resultado.misionesr) -
+                    parseInt(valor.caballerosp)),
+                jovenesr: (resultado.jovenesr =
+                    parseInt(resultado.caballerosr) - parseInt(valor.jovenesp)),
+                otrosr: (resultado.otrosr =
+                    parseInt(resultado.jovenesr) - parseInt(valor.otrosp)),
+            });
         }
         // escala8
         if (obtiendo.entrada >= 30001 && obtiendo.entrada <= 40000) {
@@ -227,6 +369,31 @@ export const UseCalc = (initialValue = {}) => {
                 )),
                 jovenesp: (valor.jovenesp = parseInt(obtiendo.jovenes)),
                 otrosp: (valor.otrosp = parseInt(obtiendo.otros)),
+            });
+             setResultado({
+                ...resultado,
+                fondor: (resultado.fondor = obtiendo.fondo),
+                entradar: (resultado.entradar =
+                    parseInt(obtiendo.fondo) + parseInt(obtiendo.entrada)),
+                obrar: (resultado.obrar =
+                    parseInt(resultado.entradar) - parseInt(valor.obrap)),
+                pastorr: (resultado.pastorr = resultado.obrar - valor.pastorp),
+
+                pastorar: (resultado.pastorar =
+                    parseInt(resultado.pastorr) - parseInt(valor.pastorap)),
+                aporter: (resultado.aporter =
+                    parseInt(resultado.pastorar) - parseInt(valor.aportep)),
+                ayudar: (resultado.ayudar =
+                    parseInt(resultado.aporter) - parseInt(valor.ayudap)),
+                misionesr: (resultado.misionesr =
+                    parseInt(resultado.ayudar) - parseInt(valor.misionesp)),
+                caballerosr: (resultado.caballerosr =
+                    parseInt(resultado.misionesr) -
+                    parseInt(valor.caballerosp)),
+                jovenesr: (resultado.jovenesr =
+                    parseInt(resultado.caballerosr) - parseInt(valor.jovenesp)),
+                otrosr: (resultado.otrosr =
+                    parseInt(resultado.jovenesr) - parseInt(valor.otrosp)),
             });
         }
         // escala9
@@ -247,6 +414,31 @@ export const UseCalc = (initialValue = {}) => {
                 jovenesp: (valor.jovenesp = parseInt(obtiendo.jovenes)),
                 otrosp: (valor.otrosp = parseInt(obtiendo.otros)),
             });
+             setResultado({
+                ...resultado,
+                fondor: (resultado.fondor = obtiendo.fondo),
+                entradar: (resultado.entradar =
+                    parseInt(obtiendo.fondo) + parseInt(obtiendo.entrada)),
+                obrar: (resultado.obrar =
+                    parseInt(resultado.entradar) - parseInt(valor.obrap)),
+                pastorr: (resultado.pastorr = resultado.obrar - valor.pastorp),
+
+                pastorar: (resultado.pastorar =
+                    parseInt(resultado.pastorr) - parseInt(valor.pastorap)),
+                aporter: (resultado.aporter =
+                    parseInt(resultado.pastorar) - parseInt(valor.aportep)),
+                ayudar: (resultado.ayudar =
+                    parseInt(resultado.aporter) - parseInt(valor.ayudap)),
+                misionesr: (resultado.misionesr =
+                    parseInt(resultado.ayudar) - parseInt(valor.misionesp)),
+                caballerosr: (resultado.caballerosr =
+                    parseInt(resultado.misionesr) -
+                    parseInt(valor.caballerosp)),
+                jovenesr: (resultado.jovenesr =
+                    parseInt(resultado.caballerosr) - parseInt(valor.jovenesp)),
+                otrosr: (resultado.otrosr =
+                    parseInt(resultado.jovenesr) - parseInt(valor.otrosp)),
+            });
         }
         // escala10
         if (obtiendo.entrada >= 60001 && obtiendo.entrada <= 100000) {
@@ -266,6 +458,31 @@ export const UseCalc = (initialValue = {}) => {
                 jovenesp: (valor.jovenesp = parseInt(obtiendo.jovenes)),
                 otrosp: (valor.otrosp = parseInt(obtiendo.otros)),
             });
+             setResultado({
+                ...resultado,
+                fondor: (resultado.fondor = obtiendo.fondo),
+                entradar: (resultado.entradar =
+                    parseInt(obtiendo.fondo) + parseInt(obtiendo.entrada)),
+                obrar: (resultado.obrar =
+                    parseInt(resultado.entradar) - parseInt(valor.obrap)),
+                pastorr: (resultado.pastorr = resultado.obrar - valor.pastorp),
+
+                pastorar: (resultado.pastorar =
+                    parseInt(resultado.pastorr) - parseInt(valor.pastorap)),
+                aporter: (resultado.aporter =
+                    parseInt(resultado.pastorar) - parseInt(valor.aportep)),
+                ayudar: (resultado.ayudar =
+                    parseInt(resultado.aporter) - parseInt(valor.ayudap)),
+                misionesr: (resultado.misionesr =
+                    parseInt(resultado.ayudar) - parseInt(valor.misionesp)),
+                caballerosr: (resultado.caballerosr =
+                    parseInt(resultado.misionesr) -
+                    parseInt(valor.caballerosp)),
+                jovenesr: (resultado.jovenesr =
+                    parseInt(resultado.caballerosr) - parseInt(valor.jovenesp)),
+                otrosr: (resultado.otrosr =
+                    parseInt(resultado.jovenesr) - parseInt(valor.otrosp)),
+            });
         }
         escala11
         if (obtiendo.entrada >= 100001) {
@@ -284,6 +501,31 @@ export const UseCalc = (initialValue = {}) => {
                 )),
                 jovenesp: (valor.jovenesp = parseInt(obtiendo.jovenes)),
                 otrosp: (valor.otrosp = parseInt(obtiendo.otros)),
+            });
+             setResultado({
+                ...resultado,
+                fondor: (resultado.fondor = obtiendo.fondo),
+                entradar: (resultado.entradar =
+                    parseInt(obtiendo.fondo) + parseInt(obtiendo.entrada)),
+                obrar: (resultado.obrar =
+                    parseInt(resultado.entradar) - parseInt(valor.obrap)),
+                pastorr: (resultado.pastorr = resultado.obrar - valor.pastorp),
+
+                pastorar: (resultado.pastorar =
+                    parseInt(resultado.pastorr) - parseInt(valor.pastorap)),
+                aporter: (resultado.aporter =
+                    parseInt(resultado.pastorar) - parseInt(valor.aportep)),
+                ayudar: (resultado.ayudar =
+                    parseInt(resultado.aporter) - parseInt(valor.ayudap)),
+                misionesr: (resultado.misionesr =
+                    parseInt(resultado.ayudar) - parseInt(valor.misionesp)),
+                caballerosr: (resultado.caballerosr =
+                    parseInt(resultado.misionesr) -
+                    parseInt(valor.caballerosp)),
+                jovenesr: (resultado.jovenesr =
+                    parseInt(resultado.caballerosr) - parseInt(valor.jovenesp)),
+                otrosr: (resultado.otrosr =
+                    parseInt(resultado.jovenesr) - parseInt(valor.otrosp)),
             });
         }
         // setValor({
