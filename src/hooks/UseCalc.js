@@ -484,7 +484,7 @@ export const UseCalc = (initialValue = {}) => {
                     parseInt(resultado.jovenesr) - parseInt(valor.otrosp)),
             });
         }
-        escala11
+        // escala11
         if (obtiendo.entrada >= 100001) {
              setValor({
                 ...valor,
