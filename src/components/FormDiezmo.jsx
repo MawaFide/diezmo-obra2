@@ -64,7 +64,7 @@ export const FormDiezmo = () => {
                     </label>
 
                     <input
-                        className="flex  border-2 border-violet-700 rounded-md focus:outline-violet-800 focus:p-1"
+                        className="flex w-36 border-2 border-violet-700 rounded-md focus:outline-violet-800 focus:p-1"
                         type="number"
                         placeholder="0"
                         name="fondo"
@@ -80,7 +80,7 @@ export const FormDiezmo = () => {
                     </label>
 
                     <input
-                        className="flex  border-2 border-violet-700 rounded-md focus:outline-violet-800 focus:p-1"
+                        className="flex w-36 border-2  border-violet-700 rounded-md focus:outline-violet-800 focus:p-1"
                         type="number"
                         placeholder="0"
                         name="entrada"
@@ -96,7 +96,7 @@ export const FormDiezmo = () => {
                     </label>
 
                     <input
-                        className="flex  border-2 border-violet-700 rounded-md focus:outline-violet-800 focus:p-1"
+                        className="flex w-36 border-2 border-violet-700 rounded-md focus:outline-violet-800 focus:p-1"
                         type="number"
                         placeholder="0"
                         name="obra"
@@ -113,7 +113,7 @@ export const FormDiezmo = () => {
                     </label>
 
                     <input
-                        className="flex  border-2 border-violet-700 rounded-md focus:outline-violet-800 focus:p-1"
+                        className="flex w-36 border-2 border-violet-700 rounded-md focus:outline-violet-800 focus:p-1"
                         type="number"
                         placeholder="0"
                         name="pastor"
@@ -130,7 +130,7 @@ export const FormDiezmo = () => {
                     </label>
 
                     <input
-                        className="flex  border-2 border-violet-700 rounded-md focus:outline-violet-800 focus:p-1"
+                        className="flex w-36 border-2 border-violet-700 rounded-md focus:outline-violet-800 focus:p-1"
                         type="number"
                         placeholder="0"
                         name="pastora"
@@ -148,7 +148,7 @@ export const FormDiezmo = () => {
                     </label>
 
                     <input
-                        className="flex  border-2 border-violet-700 rounded-md focus:outline-violet-800 focus:p-1"
+                        className="flex w-36 border-2 border-violet-700 rounded-md focus:outline-violet-800 focus:p-1"
                         type="number"
                         placeholder="0"
                         name="aporteI"
@@ -165,7 +165,7 @@ export const FormDiezmo = () => {
                     </label>
 
                     <input
-                        className="flex  border-2 border-violet-700 rounded-md focus:outline-violet-800 focus:p-1"
+                        className="flex w-36 border-2 border-violet-700 rounded-md focus:outline-violet-800 focus:p-1"
                         type="number"
                         placeholder="0"
                         name="ayudaI"
@@ -181,7 +181,7 @@ export const FormDiezmo = () => {
                     </label>
 
                     <input
-                        className="flex  border-2 border-violet-700 rounded-md focus:outline-violet-800 focus:p-1"
+                        className="flex w-36 border-2 border-violet-700 rounded-md focus:outline-violet-800 focus:p-1"
                         type="number"
                         placeholder="0"
                         name="misiones"
@@ -197,7 +197,7 @@ export const FormDiezmo = () => {
                     </label>
 
                     <input
-                        className="flex  border-2 border-violet-700 rounded-md focus:outline-violet-800 focus:p-1"
+                        className="flex w-36 border-2 border-violet-700 rounded-md focus:outline-violet-800 focus:p-1"
                         type="number"
                         placeholder="0"
                         name="caballeros"
@@ -213,7 +213,7 @@ export const FormDiezmo = () => {
                     </label>
 
                     <input
-                        className="flex  border-2 border-violet-700 rounded-md focus:outline-violet-800 focus:p-1"
+                        className="flex w-36 border-2 border-violet-700 rounded-md focus:outline-violet-800 focus:p-1"
                         type="number"
                         placeholder="0"
                         name="jovenes"
@@ -229,7 +229,7 @@ export const FormDiezmo = () => {
                     </label>
 
                     <input
-                        className="flex  border-2 border-violet-700 rounded-md focus:outline-violet-800 focus:p-1"
+                        className="flex w-36 border-2 border-violet-700 rounded-md focus:outline-violet-800 focus:p-1"
                         type="number"
                         placeholder="0"
                         name="otros"
