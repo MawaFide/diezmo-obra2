@@ -45,18 +45,20 @@ export const FormDiezmo = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        
+
         handleAdd();
         // console.log(resultado);
         // handelResetValo();
         handleCalc();
-
-        
     };
 
     return (
         <>
-            <Escala escala={valor.escalap}  porciento={valor.porcientop} suma={sumaObreroIglesia}  />
+            <Escala
+                escala={valor.escalap}
+                porciento={valor.porcientop}
+                suma={sumaObreroIglesia}
+            />
             <form onSubmit={handleSubmit} className="mt-4 flex flex-col">
                 <div className="flex justify-between  p-2">
                     <label className="w-30" htmlFor="Fondo">
