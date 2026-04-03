@@ -492,7 +492,7 @@ export const UseCalc = (initialValue = {}) => {
                 porcientop: (valor.porcientop = "20%"),
                 pastorp: (valor.pastorp = parseInt(obtiendo.entrada) *0.20),
                 pastorap: (valor.pastorap =  parseInt(obtiendo.entrada) *0.20),
-                aportep: (valor.aportep = (20000 * 10) / 100),
+                aportep: (valor.aportep = (valor.pastorp * 10) / 100),
                 ayudap: (valor.ayudap = parseInt(obtiendo.ayudaI)),
                 misionesp: (valor.misionesp = parseInt(obtiendo.misiones)),
                 caballerosp: (valor.caballerosp = parseInt(
